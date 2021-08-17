@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200&display=swap');
+
+:root{
+    --primary-backgroundcolor : rgba(103, 106, 252, 0.952) ;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0rem;
+    /* background-image: image(); */
+   background-color: rgb(195, 252, 249);
+    font-size: small;
+}
+
+/* 
+img{
+   min-height: 100%;
+   min-width: 1024px;
+   width: 100%;
+   height: auto;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   
+} */
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+      left: 50%;
+      margin-left: -512px;   /* 50% */
+    }
+}
+
+.main-div{
+    margin: auto;
+    /* margin-top: 10%; */
+    /* margin-left: 20%; */
+    max-width:50% ;
+    width: 100%;
+    height: 80%;
+    background-color: rgb(241, 233, 233);
+    border-radius: 2rem;
+    border-style:ridge;
+    border-width: 1rem;
+    border-color: var(--primary-backgroundcolor);
+    font-size: 1rem;
+    font-style: italic;
+ 
+}
+
+@media (max-width:460px){
+    .main-div{
+        max-width : 80%;
+    }
+  
+}
+/* 
+h1{
+    padding: 0.5rem;
+}
+h2{
+    padding: 0.5rem;
+} */
+.dateInput{
+    margin: auto;
+    background-color: rgb(207, 205, 209);
+    text-align: center;   
+}
+.luckyNumberInput{
+    margin: auto;
+    background-color: rgb(217, 215, 219);
+    text-align: center;   
+}
+
+input{
+    cursor: pointer;
+    /* text-align: center; */
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    
+}
+
+
+.checkButton{
+    text-align: center;
+    padding: 1rem;
+
+}
+
+button{
+    font-size: larger;
+    padding: 1rem 2rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    border-width: 0.5rem;
+    border-style: solid;
+    cursor: pointer;
+}
+#github a{
+    text-decoration: none;
+}
+
+#alert-box{
+    background-color: rgba(252, 26, 26, 0.822);
+    max-width: fit-content;
+    padding: 1rem 2rem;
+    font-weight:bold;
+    font-size: larger;
+    margin: auto;
+    margin-bottom: 1rem;
+    color: rgb(158, 255, 93);
+   
+}
+
+#alert-close{
+    color: rgba(252, 26, 26, 0.822);
+    background-color: rgb(158, 255, 93);
+    margin-top: 2rem;
+    cursor: pointer;
+}
